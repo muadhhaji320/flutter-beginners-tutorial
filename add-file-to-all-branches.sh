@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the name of the file to add
-filename="concepts.md"
+filename="Concepts.md"
 
 # Add the file to the Git index
 git add $filename
