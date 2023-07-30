@@ -9,8 +9,8 @@ git add $filename
 # Commit the changes to the default branch
 git commit -m "Add $filename to repository"
 
-# Get a list of all branches except the default branch
-branches=$(git branch | grep -v "^\*" | sed 's/^[[:space:]]*//')
+# Get a list of all branches
+branches=$(git branch | sed 's/^[[:space:]]*//')
 
 # Loop through each branch and merge the changes from the default branch
 for branch in $branches
